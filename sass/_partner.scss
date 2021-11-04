@@ -1,0 +1,9 @@
+.partner {
+  &__content {
+    @include flex(space-between, center, nowrap, row);
+    margin-bottom: 50px;
+  }
+  img {
+    object-fit: contain;
+  }
+}

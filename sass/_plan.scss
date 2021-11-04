@@ -1,0 +1,74 @@
+.plan {
+  background-image: linear-gradient(#fbfbfb, #fff);
+  padding-top: 80px;
+  padding-bottom: 30px;
+  &__container {
+  }
+  &__header {
+    text-align: center;
+  }
+  &__desc {
+    margin-bottom: 60px;
+  }
+  &__main {
+    @include flex(center, flex-start);
+  }
+  &__item {
+    @include flex(center, center, nowrap, column);
+    border: 1px solid $border-gray;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 330px;
+    margin-right: 50px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    transition: border 0.3s;
+    &:last-child {
+      margin-right: 0;
+      border: 1px solid $primary-color;
+    }
+    &:hover {
+      border: 1px solid $primary-color;
+    }
+  }
+  &__featureList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+  }
+  &__featureItem {
+    @include flex(flex-start, center);
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 30px;
+    img {
+      margin-right: 20px;
+    }
+  }
+  &__name {
+    margin: 30px 0px;
+    font-size: 18px;
+  }
+  &__price {
+    margin: 130px 0 20px 0;
+    font-size: 25px;
+    .strong {
+      font-weight: 500;
+    }
+  }
+  .plan__btn {
+    padding: 13px 69px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+      box-shadow: 5px 15px 35px rgb(245 56 56 / 35%);
+    }
+  }
+  .actv {
+    background-color: $primary-color;
+    color: white;
+  }
+}

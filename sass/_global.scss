@@ -1,0 +1,97 @@
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  line-height: 30px;
+  font-family: $font;
+  color: $text-color;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: white;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  padding: 13px 45px;
+  // line-height: 1;
+  font-family: $font;
+  color: inherit;
+  border-radius: 100rem;
+  &--primary {
+    font-weight: 700;
+    background-color: $primary-color;
+    color: white;
+    position: relative;
+    &::after {
+      content: "";
+      width: 90%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      z-index: -1;
+
+      background: rgba(245, 56, 56, 0.5);
+      filter: blur(54px);
+      border-radius: 10px;
+    }
+  }
+  &--outline {
+    color: $primary-color;
+    border: 1px solid;
+    font-weight: 500;
+  }
+  &--noround {
+    border-radius: 10px;
+    padding: 17.5px 70.5px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: $heading-color;
+  font-weight: bold;
+}
+
+.heading {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: calc(50 / 35);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .btn {
+    padding: 13px 30px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .btn {
+    padding: 13px 20px;
+  }
+}

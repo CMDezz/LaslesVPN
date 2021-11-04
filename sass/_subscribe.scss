@@ -1,0 +1,17 @@
+.subscribe {
+  padding: 58px 70px;
+  width: 1140px;
+  margin: 0 auto;
+  background-color: #fff;
+  transform: translateY(-50%);
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  &__container {
+    @include flex(space-between, center);
+  }
+  &__content {
+    max-width: 410px;
+  }
+}
